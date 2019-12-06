@@ -32,8 +32,8 @@ def saveImage(img, name):
     cv2.imwrite(pathName + name + ".png", img)
     return
 
-# MAKE FILTERS
-    
+# MAKE FILTERS CODE IMPLEMENTED FROM: https://github.com/CVDLBOT/LM_filter_bank_python_code/blob/master/lm.py 
+   
 def gaussian1d(sigma, mean, x, ord):
     x = np.array(x)
     x_ = x - mean
